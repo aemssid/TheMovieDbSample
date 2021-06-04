@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieListFragment">
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.example.savvologytask.ui.movielist.MovieListFragment"
+        android:label="fragment_movie_list"
+        tools:layout="@layout/fragment_movie_list" >
+        <action
+            android:id="@+id/action_movieListFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_movieListFragment_to_searchMovieFragment"
+            app:destination="@id/searchMovieFragment" />
+        <action
+            android:id="@+id/action_movieListFragment_to_favouritesHomeFragment"
+            app:destination="@id/favouritesHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.savvologytask.ui.details.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <action
+            android:id="@+id/action_movieDetailsFragment_self"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_personDetailsFragment"
+            app:destination="@id/personDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchMovieFragment"
+        android:name="com.example.savvologytask.ui.search.SearchMovieFragment"
+        android:label="fragment_search_movie"
+        tools:layout="@layout/fragment_search_movie" >
+        <action
+            android:id="@+id/action_searchMovieFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_searchMovieFragment_to_personDetailsFragment"
+            app:destination="@id/personDetailsFragment" />
+        <action
+            android:id="@+id/action_searchMovieFragment_to_favouritesHomeFragment"
+            app:destination="@id/favouritesHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesHomeFragment"
+        android:name="com.example.savvologytask.ui.favourites.FavouritesHomeFragment"
+        android:label="FavouritesHomeFragment"
+        tools:layout="@layout/fragment_favourites_home">
+        <action
+            android:id="@+id/action_favouritesHomeFragment_to_favouriteMoviesFragment"
+            app:destination="@id/favouriteMoviesFragment" />
+        <action
+            android:id="@+id/action_favouritesHomeFragment_to_favouriteArtistFragment"
+            app:destination="@id/favouriteArtistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteMoviesFragment"
+        android:name="com.example.savvologytask.ui.favourites.FavouriteMoviesFragment"
+        android:label="fragment_favourite_movies"
+        tools:layout="@layout/fragment_favourite_movies" >
+        <action
+            android:id="@+id/action_favouriteMoviesFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_favouriteMoviesFragment_to_searchMovieFragment"
+            app:destination="@id/searchMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personDetailsFragment"
+        android:name="com.example.savvologytask.ui.person.PersonDetailsFragment"
+        android:label="PersonDetailsFragment"
+        tools:layout="@layout/fragment_person_details">
+        <action
+            android:id="@+id/action_personDetailsFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteArtistFragment"
+        android:name="com.example.savvologytask.ui.favourites.FavouriteArtistFragment"
+        android:label="FavouriteArtistFragment"
+        tools:layout="@layout/fragment_favourite_artist">
+        <action
+            android:id="@+id/action_favouriteArtistFragment_to_personDetailsFragment"
+            app:destination="@id/personDetailsFragment" />
+        <action
+            android:id="@+id/action_favouriteArtistFragment_to_searchMovieFragment"
+            app:destination="@id/searchMovieFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="XLargeFont">
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    <style name="LargeFont">
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="XMediumFont">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="MediumFont">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="XSmallFont">
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="SmallFont">
+        <item name="android:textSize">@dimen/_8ssp</item>
+    </style>
+
+    <style name="XLargeFont.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="XLargeFont.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="XLargeFont.Grey">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="LargeFont.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="LargeFont.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="XMediumFont.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="XMediumFont.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumFont.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MediumFont.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="XSmallFont.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="XSmallFont.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SmallFont.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SmallFont.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+            android:background="@drawable/review_background"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Awesome Movie"
+            style="@style/SmallFont.Black"
+            android:textColor="#666666"
+            android:lines="5"
+            android:ellipsize="end"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_author_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="- Robert Downey"
+            style="@style/SmallFont.Black"
+            android:layout_below="@id/tv_content_review"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

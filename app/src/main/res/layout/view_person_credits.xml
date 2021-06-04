@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="creditModel"
+            type="com.example.savvologytask.data.remote.PersonCreditResponse" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_person_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_30sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cast_title"
+            style="@style/LargeFont.Black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:maxLines="2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right_padding_person_details"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left_padding_person_details"
+            app:layout_constraintTop_toBottomOf="@id/guideline_top_padding_person_details"
+            android:text="@string/featured_in_cast" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_person_as_cast"
+            style="@style/MediumFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:maxLines="2"
+            android:text="@string/as_cast"
+            app:fontFamily="@font/open_sans_semi_bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right_padding_person_details"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left_padding_person_details"
+            app:layout_constraintTop_toBottomOf="@id/tv_cast_title"
+            tools:text="as Cast" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cast_credits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_16sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_person_as_cast"
+            tools:listitem="@layout/similar_movie_item" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_person_as_crew"
+            style="@style/MediumFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:maxLines="2"
+            android:text="@string/as_crew"
+            app:fontFamily="@font/open_sans_semi_bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right_padding_person_details"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left_padding_person_details"
+            app:layout_constraintTop_toBottomOf="@id/rv_cast_credits"
+            tools:text="as Crew" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_crew_credits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_16sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_person_as_crew"
+            tools:listitem="@layout/similar_movie_item" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left_padding_person_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right_padding_person_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top_padding_person_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/grp_cast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_person_as_cast,rv_cast_credits" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/grp_crew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_person_as_crew,rv_crew_credits" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">SavvologyTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <string name="movie_duration">%s Minutes</string>
+    <string name="movie_total_votes">%s Votes</string>
+    <string name="movie_type_label">\"Type: \"</string>
+    <string name="movie_spoken_lang">\"Spoken languages: \"</string>
+    <string name="str_cast">Cast</string>
+    <string name="str_crew">Crew</string>
+    <string name="str_synopsis">Synopsis</string>
+    <string name="str_reviews">Reviews</string>
+    <string name="str_similar_movies">Similar Movies</string>
+    <string name="str_divider">|</string>
+    <string name="search_movie_hint">Search by name, actor, actress</string>
+    <string name="some_hint">Search by title, actor, actess, director</string>
+    <string name="favourite">Favourite</string>
+    <string name="see_more">See More</string>
+    <string name="see_less">See Less</string>
+    <string name="known_for">Known for : %s</string>
+    <string name="featured_in_cast">Featured in </string>
+    <string name="as_cast">as Cast</string>
+    <string name="as_crew">Crew</string>
+    <string name="dob_artist">DOB : %s</string>
+    <string name="artist_popularity">Popularity : %s</string>
+    <string name="no_items_found">No Items Found</string>
+    <string name="search_now">Search Now</string>
+    <string name="no_fav_title">Likes Nothing?</string>
+    <string name="no_fav_message">Still you can search for anything, Who knows you may found what you\'re looking for?</string>
+    <string name="no_internet_title">No Internet Connection?</string>
+    <string name="no_internet_desc">Meanwhile you can check your favourites</string>
+    <string name="no_internet_message">No Internet Connection.</string>
+    <string name="no_tv_show_support">We\'re not supporting TV show yet. Stay tuned.</string>
+    <string name="go_to_fav">Go to Favourites</string>
+</resources>

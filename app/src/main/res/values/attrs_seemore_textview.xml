@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="rmtv_more_text" format="string" />
+        <attr name="rmtv_less_text" format="string" />
+        <attr name="rmtv_max_length" format="integer" />
+        <attr name="rmtv_isExpand" format="boolean" />
+    </declare-styleable>
+</resources>
